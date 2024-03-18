@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@metamask/sdk": "^0.8.0",
+    "has": "^1.0.4",
+    "package-name": "^0.1.0"
+  }
+}

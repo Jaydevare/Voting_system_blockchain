@@ -1,0 +1,15 @@
+ await fetch(
+         "https://api.twilio.com/2010-04-01/Accounts/${SID}/Messages.json",
+         {
+           method: "POST",
+           headers: {
+             "Content-Type": "application/x-www-form-urlencoded",
+             Authorization:
+               "Basic " +
+               btoa(
+                 "${SID}:${AUTH_TOKEN}"
+               ),
+           },
+           body: `Body=Your OTP is ${temppOtp}&From=${Number}&To=+91${mobileNumber}`,
+         }
+       );
